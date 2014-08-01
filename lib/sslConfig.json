@@ -1,0 +1,5 @@
+{
+   "cert": "/etc/pki/tls/certs/comodo_mrn_wildcard_ssl_cert/STAR_mrn_org.crt",
+   "key": "/etc/pki/tls/private/comodo_mrn_wildcard_ssl_cert/mrn_wildcard.key",
+   "chain": "/etc/pki/tls/certs/comodo_mrn_wildcard_ssl_cert/STAR_mrn_org.ca-bundle"
+}

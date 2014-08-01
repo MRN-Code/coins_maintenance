@@ -19,14 +19,26 @@ To stop the server run `npm stop`
 
 # How it works
 
-The webpage is served by **httpster**.
-httpster is typically globally installed and started with `httpster -p <port number>`.
-In this case, httpster is installed locally, and can be started with `node node_modules/httpster/lib/server.js -p <port number>`.
+The server is run by `server.js`, and can be started manually on port 3333 by executing `node server.js`.
+
+To specify a port, run `node server.js -p <custom port>`.
+
+To start an ssl server, run `node server.js --ssl -p <custom port>`.
+
+To configure the locations of ssl certificates, modify lib/sslConfig.json.
+
 Some shortcuts have been added to bring the server up quickly (see Usage).
 
 # Testing and Development
 
 To serve this page on non-standard ports, run `npm test`, which will start the server on port 3333.
+
+Alternatively, you can manually start the sever with `node server.js -p <port number>`.
+
 The process can be stopped using `npm stop`.
 
+Note, running `npm stop` will stop all instances of the server, including the non-test instances.
 
+# TODO
+1. scale MRI image for faster loading.
+2. Add Winston to log visits during outages
