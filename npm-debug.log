@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'stop' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink /usr/bin/node
+5 verbose run-script [ 'prestop', 'stop', 'poststop' ]
+6 info prestop coins_maintenance@0.0.0
+7 info stop coins_maintenance@0.0.0
+8 verbose unsafe-perm in lifecycle true
+9 info coins_maintenance@0.0.0 Failed to exec stop script
+10 error coins_maintenance@0.0.0 stop: `echo 'Killing Server'; killall node node_modules/httpster/lib/server.js;`
+10 error Exit status 1
+11 error Failed at the coins_maintenance@0.0.0 stop script.
+11 error This is most likely a problem with the coins_maintenance package,
+11 error not with npm itself.
+11 error Tell the author that this fails on your system:
+11 error     echo 'Killing Server'; killall node node_modules/httpster/lib/server.js;
+11 error You can get their info via:
+11 error     npm owner ls coins_maintenance
+11 error There is likely additional logging output above.
+12 error System Linux 3.2.0-51-generic
+13 error command "/usr/bin/node" "/usr/bin/npm" "stop"
+14 error cwd /coins/coins_builder/coins_maintenance
+15 error node -v v0.10.26
+16 error npm -v 1.4.3
+17 error code ELIFECYCLE
+18 verbose exit [ 1, true ]

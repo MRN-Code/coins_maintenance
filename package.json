@@ -1,0 +1,16 @@
+{
+  "name": "coins_maintenance",
+  "version": "0.0.0",
+  "description": "Static COINS Maintenance Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/httpster/lib/server.js &",
+    "start": "node node_modules/httpster/lib/server.js -p 8080 & node node_modules/httpster/lib/server.js -p 4443 &",
+    "stop": "echo 'Killing Server'; killall node node_modules/httpster/lib/server.js;"
+  },
+  "author": "Dylan Wood",
+  "license": "ISC",
+  "dependencies": {
+    "httpster": "^0.6.0"
+  }
+}
